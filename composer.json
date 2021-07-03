@@ -1,0 +1,20 @@
+{
+  "name": "letsrock/router",
+  "license": "proprietary",
+  "minimum-stability": "alpha",
+  "authors": [
+    {
+      "name": "Leonid Titov",
+      "email": "shredder139@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0",
+    "letsrock/letsenv": "1.*",
+    "letsrock/singleton": "1.*",
+    "letsrock/container": "1.*"
+  },
+  "autoload": {
+    "classmap": ["src"]
+  }
+}
