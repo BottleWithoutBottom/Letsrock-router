@@ -50,7 +50,11 @@ class FastRouter extends Router
                     if (!empty($this->containerDefinitions)) {
                         $container->setConfig($this->containerDefinitions);
                     }
-                    $container->handle([$class, $method], $vars);
+                    try {
+                        $container->handle([$class, $method], $vars);
+                    } catch (\Exception $e) {
+                        throw new $e;
+                    }
                     break;
             }
         }
