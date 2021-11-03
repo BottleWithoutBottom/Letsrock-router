@@ -53,7 +53,7 @@ class FastRouter extends Router
                     try {
                         $container->handle([$class, $method], $vars);
                     } catch (\Exception $e) {
-                        throw new $e;
+                        throw $e;
                     }
                     break;
             }
